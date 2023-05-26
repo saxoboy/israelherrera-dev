@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import { Router } from 'next/router';
+import { appWithTranslation } from 'next-i18next';
 import nProgress from 'nprogress';
 import { SWRConfig } from 'swr';
 
@@ -15,7 +16,7 @@ Router.events.on('routeChangeStart', nProgress.start);
 Router.events.on('routeChangeError', nProgress.done);
 Router.events.on('routeChangeComplete', nProgress.done);
 
-export default function App({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <DismissableToast />
@@ -29,4 +30,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </SWRConfig>
     </Layout>
   );
-}
+};
+
+export default appWithTranslation(MyApp);

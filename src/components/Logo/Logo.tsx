@@ -1,16 +1,17 @@
-import NextImage from '@/components/NextImage';
-
+import { FaLaptopCode } from 'react-icons/fa';
 const Logo = () => {
   return (
-    <div>
-      <NextImage
-        useSkeleton
-        className='w-32 md:w-60'
-        src='/images/isteps-logo.png'
-        width='240'
-        height='240'
-        alt='Isteps Logo'
-      />
+    <div className='flex items-center justify-center gap-x-4 font-display'>
+      <div className=''>
+        <FaLaptopCode className='text-7xl text-primary-100' />
+      </div>
+      <div className='w-[260px]'>
+        <span className='text-3xl text-primary-300'>Israel Herrera</span>
+        <br />
+        <span className='text-xl text-secondary-500'>
+          Fullstack Developer JS / TS
+        </span>
+      </div>
     </div>
   );
 };

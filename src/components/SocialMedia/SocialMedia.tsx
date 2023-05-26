@@ -1,32 +1,45 @@
 import Link from 'next/link';
-import { FaTiktok } from 'react-icons/fa';
 import {
-  RiFacebookCircleFill,
-  RiInstagramFill,
+  RiFileUserFill,
+  RiGithubFill,
+  RiLinkedinBoxFill,
+  RiMailSendFill,
   RiTwitterFill,
-  RiYoutubeFill,
 } from 'react-icons/ri';
 
 const SocialMedia = () => {
   return (
-    <div className='flex items-center justify-end gap-2'>
-      <Link href='https://www.facebook.com/isteps.edu.ec' target='_blank'>
-        <RiFacebookCircleFill className='text-2xl text-sanJuan-default hover:text-white' />
-      </Link>
-      <Link href='https://twitter.com/ISTEPS_ec' target='_blank'>
-        <RiTwitterFill className='text-2xl  text-sanJuan-default hover:text-white' />
-      </Link>
-      <Link href='https://www.instagram.com/isteps.edu.ec' target='_blank'>
-        <RiInstagramFill className='text-2xl  text-sanJuan-default hover:text-white' />
+    <div className='flex items-center justify-end gap-3'>
+      <Link
+        href='https://www.linkedin.com/in/israelherrerae'
+        target='_blank'
+        title='CV - Resume'
+      >
+        <RiFileUserFill className='text-2xl text-secondary-500 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-300' />
       </Link>
       <Link
-        href='https://www.youtube.com/channel/UCrPo0JNk8DUvPRDx5UD2bVA'
+        href='https://www.linkedin.com/in/israelherrerae'
         target='_blank'
+        title='Israel Herrera in Linkedin'
       >
-        <RiYoutubeFill className='text-2xl  text-sanJuan-default hover:text-white' />
+        <RiLinkedinBoxFill className='text-2xl text-secondary-500 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-300' />
       </Link>
-      <Link href='https://www.tiktok.com/@isteps.edu.ec' target='_blank'>
-        <FaTiktok className='text-xl  text-sanJuan-default hover:text-white' />
+      <Link
+        href='https://github.com/saxoboy'
+        target='_blank'
+        title='Israel Herrera in Github'
+      >
+        <RiGithubFill className='text-2xl text-secondary-500 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-300' />
+      </Link>
+      <Link
+        href='https://twitter.com/saxoboy'
+        target='_blank'
+        title='Israel Herrera in Twitter'
+      >
+        <RiTwitterFill className='text-2xl text-secondary-500 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-300' />
+      </Link>
+      <Link href='mailto:israelherrerae@gmail.com' target='_blank'>
+        <RiMailSendFill className='text-2xl text-secondary-500 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-300' />
       </Link>
     </div>
   );
