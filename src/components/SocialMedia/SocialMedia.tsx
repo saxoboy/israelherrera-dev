@@ -7,14 +7,12 @@ import {
   RiTwitterFill,
 } from 'react-icons/ri';
 
+import { cvUrl } from '@/constant/env';
+
 const SocialMedia = () => {
   return (
     <div className='flex items-center justify-end gap-3'>
-      <Link
-        href='https://www.linkedin.com/in/israelherrerae'
-        target='_blank'
-        title='CV - Resume'
-      >
+      <Link href={cvUrl} target='_blank' title='CV - Resume'>
         <RiFileUserFill className='text-2xl text-secondary-500 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-300' />
       </Link>
       <Link

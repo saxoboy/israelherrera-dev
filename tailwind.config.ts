@@ -90,10 +90,16 @@ module.exports = {
             backgroundPosition: '700px 0',
           },
         },
+        morph: {
+          '0%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+          '50%': { borderRadius: '30% 60% 70% 40%/50% 60% 30%' },
+          '100%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+        },
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+        morph: 'morph 8s ease-in-out infinite 1s',
       },
     },
   },
