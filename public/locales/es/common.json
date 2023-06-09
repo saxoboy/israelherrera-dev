@@ -1,3 +1,8 @@
 {
-  "hello-world": "Hola mijines!!"
+  "hello-world": "Hola mijines!!",
+  "home": "Inicio",
+  "hi": "👋🏼 Hola!... Yo soy",
+  "footer": {
+    "GetInTouch": "Contactos"
+  }
 }

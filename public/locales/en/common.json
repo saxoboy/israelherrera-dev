@@ -1,3 +1,8 @@
 {
-  "hello-world": "Hello World"
+  "hello-world": "Hello World",
+  "home": "Home",
+  "hi": "👋🏼 Hello there!... I'm",
+  "footer": {
+    "GetInTouch": "Get In Touch"
+  }
 }
