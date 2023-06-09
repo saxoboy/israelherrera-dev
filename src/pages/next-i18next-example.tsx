@@ -5,7 +5,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const TranslationExample = () => {
   const { t } = useTranslation();
 
-  return <div>{t('hello-world')}</div>;
+  return (
+    <div>
+      <p>{t('hi')}</p>
+      <p>aaa</p>
+    </div>
+  );
 };
 
 export default TranslationExample;

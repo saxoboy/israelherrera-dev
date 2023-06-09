@@ -1,8 +1,11 @@
 import { Head, Html, Main, NextScript } from 'next/document';
 
+import i18nextConfig from '../../next-i18next.config';
+
 export default function Document() {
+  const currentLocale = 'en' ?? i18nextConfig.i18n.defaultLocale;
   return (
-    <Html lang='es'>
+    <Html lang={currentLocale}>
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
@@ -15,7 +18,7 @@ export default function Document() {
           rel='stylesheet'
         />
       </Head>
-      <body className='bg-primary-900 font-body'>
+      <body className='bg-gray-50 font-body dark:bg-primary-900'>
         <Main />
         <NextScript />
       </body>

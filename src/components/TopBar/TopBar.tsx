@@ -4,7 +4,7 @@ import SocialMedia from '@/components/SocialMedia';
 
 const TopBar = () => {
   return (
-    <div className='bg-primary-950 px-4 py-4 text-white'>
+    <div className='bg-primary-300 px-4 py-4 dark:bg-primary-950'>
       <div className='container mx-auto flex justify-between'>
         <div className='relative flex items-end justify-start'>
           <div className='flex'>

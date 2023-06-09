@@ -85,32 +85,8 @@
   }
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
 /* #region  /**=========== Datepicker =========== */
-.react-datepicker-wrapper {
+/* .react-datepicker-wrapper {
   display: block;
   width: 100%;
 }
@@ -134,10 +110,10 @@ body {
   padding-bottom: 0.2rem;
   padding-left: 0.7rem;
   border-radius: 0.25rem;
-}
+} */
 
 /* Selected date color */
-.react-datepicker__day--selected,
+/* .react-datepicker__day--selected,
 .react-datepicker__day--in-selecting-range,
 .react-datepicker__day--in-range,
 .react-datepicker__month-text--selected,
@@ -154,7 +130,7 @@ body {
 .react-datepicker__quarter-text--keyboard-selected,
 .react-datepicker__year-text--keyboard-selected {
   @apply !bg-primary-500;
-}
+} */
 /* #endregion  /**======== Datepicker =========== */
 
 .wave-container {
@@ -200,4 +176,49 @@ body {
   .wave-container-footer::before {
     height: 22px;
   }
+}
+
+label {
+  width: 48px;
+  height: 24px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+label:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(180deg, #ecc506, #cc9a02);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+input:checked + label {
+  background: #212934;
+}
+input:checked + label:after {
+  left: 48px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label,
+label:after {
+  transition: 0.3s;
+}
+label:active:after {
+  width: 10px;
 }

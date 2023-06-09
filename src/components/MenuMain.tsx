@@ -5,7 +5,7 @@ const MenuMain = () => {
     <nav>
       <ul className='flex flex-col items-center justify-center text-center font-display text-xl tracking-wide text-secondary-500 lg:flex-row'>
         <li className='px-4 py-2'>
-          <UnderlineLink href='/#home'>Home</UnderlineLink>
+          <UnderlineLink href='/#home'>home</UnderlineLink>
         </li>
         <li className='px-4 py-2'>
           <UnderlineLink href='/#about-me'>About me</UnderlineLink>
@@ -17,7 +17,7 @@ const MenuMain = () => {
           <UnderlineLink href='/'>Contact</UnderlineLink>
         </li>
         <li className='px-4 py-2'>
-          <UnderlineLink href='/'>Español</UnderlineLink>
+          <UnderlineLink href='/es'>Español</UnderlineLink>
         </li>
       </ul>
     </nav>

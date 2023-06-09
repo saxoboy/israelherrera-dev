@@ -21,19 +21,21 @@ const Hero = () => {
             priority
           />
         </div>
-        <div className='w-full pt-6 text-center text-primary-50 md:w-2/3 lg:w-1/2 lg:pt-0 lg:text-left'>
+        <div className='w-full pt-6 text-center text-primary-600 dark:text-primary-50 md:w-2/3 lg:w-1/2 lg:pt-0 lg:text-left'>
           <h4 className='text-3xl lg:text-4xl'>👋🏼 Hello there!... I'm</h4>
           <h1 className='text-3xl lg:text-5xl xl:text-6xl'>
             <span className='text-gray-500'>{`<`}</span> Israel Herrera{' '}
             <span className='text-gray-500'>{`</>`}</span>
           </h1>
-          <h2 className='text-secondary-500'>Javascript Fullstack Developer</h2>
+          <h2 className='text-secondary-700 dark:text-secondary-500'>
+            Javascript Fullstack Developer
+          </h2>
           <p className='mt-2 text-lg'>
             <span className='italic'>...no time to surrender</span> 🎷 🚀{' '}
           </p>
-          <div className='flex flex-grow items-start justify-start gap-x-4 gap-y-4 pt-8 xl:items-center'>
+          <div className='flex flex-col items-center justify-center gap-x-4 gap-y-4 pt-8 lg:flex-row lg:items-start lg:justify-start xl:items-center'>
             <ButtonLink
-              className='rounded-md bg-secondary-500 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-50'
+              className='block rounded-md bg-secondary-500 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-50'
               href={cvUrl}
               target='_blanck'
             >

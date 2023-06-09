@@ -7,3 +7,7 @@ export const cvUrl =
 export const showLogger = isLocal
   ? true
   : process.env.NEXT_PUBLIC_SHOW_LOGGER === 'true' ?? false;
+
+export interface TranslateProps {
+  translate: (key: string) => string;
+}

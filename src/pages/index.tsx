@@ -1,3 +1,6 @@
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import AboutMe from '@/components/AboutMe';
 import Divider from '@/components/Divider';
 import DividerTwo from '@/components/DividerTwo';
@@ -19,3 +22,12 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(locale && (await serverSideTranslations(locale, ['common']))),
+      // Will be passed to the page component as props
+    },
+  };
+};
