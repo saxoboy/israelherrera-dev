@@ -30,7 +30,7 @@ const TextButton = React.forwardRef<HTMLButtonElement, TextButtonProps>(
           'transition duration-100',
           //#region  //*=========== Variant ===========
           variant === 'primary' && [
-            'hover:text-primary-600 text-primary-500 active:text-primary-700',
+            'text-primary-500 hover:text-primary-600 active:text-primary-700',
             'disabled:text-primary-200',
           ],
           variant === 'basic' && [
