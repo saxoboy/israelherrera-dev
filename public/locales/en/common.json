@@ -1,8 +1,40 @@
 {
   "hello-world": "Hello World",
-  "home": "Home",
-  "hi": "👋🏼 Hello there!... I'm",
+  "menu": {
+    "home": "Home",
+    "about-me": "About me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "languaje": "Español"
+  },
+  "hero": {
+    "hi": "👋🏼 Hello there!... I'm",
+    "profession": "Javascript Fullstack Developer",
+    "slogan": "...no time to surrender 🚀 🎷",
+    "button": "Download my CV",
+    "button2": "Get in touch",
+    "button3": "Visit my Linkedin"
+  },
+  "aboutme": {
+    "title": "AboutMe",
+    "description": "<p class='pb-4'>Hey what's up! I am a self-taught programmer living in Cuenca and born in Guayaquil - Ecuador 🇪🇨 in the same year as Mark Zuckerberg, Cris Evans or Ed Sheeran, yes... a magical year 😅.</p><p class='pb-4'>I am passionate about technology and a fan of <span class='text-secondary-500'>Javascript/Typescript</span>. Currently, I am exploring the fascinating world of <span class='text-secondary-500'>React JS</span> and all its exciting ecosystems such as <span class='text-secondary-500'> Vite - Next - Astros - Gatsby - etc </span>.</p><p class='pb-4'>I'm not satisfied with just that, I also spend time learning Vue, GO, Dart, and anything that allows me to solve those annoying daily problems with a touch of code.</p><p class='pb-4'>Yes, <span class='text-secondary-500'>I am a Frontend Developer by profession and a Backend Developer in evolution</span>,but I am also an enthusiast of the spiritual life 🙏🏻 and a lover of music 🎶.</p><p class='pb-4'>When I'm not immersed in lines of code, I am immersed in the sweet melodies of a Yamaha YAS-62 saxophone 🎷 in my local <a href='https://asambleacuenca.com' target='_blanck' title='Asamblea de Dios Ecuatoria de Cuenca' class='text-secondary-100 hover:text-secondary-500'>church's Praise Band ⛪️</a>. What better way to find the balance between the divine and the digital, right? I'm always ready to mix beats and code blocks to create amazing experiences both in the browser and on stage.</p><p class='pb-4 text-lg'>So if you are looking for a <span class='text-secondary-500'>Javascript Fullstack Developer</span> with an overflowing passion for technology, a saxophonist at heart, and a touch of humor, here I am! Willing to face any challenge with a smile and a coffee ☕️ in hand. Do we talk about code and music while making beautiful projects?</p>"
+  },
+  "projects": {
+    "title": "Projects",
+    "item1": {
+      "title": "Asamblea de Dios Ecuatoria de Cuenca",
+      "description": "A website for my local church",
+      "button": "Visit the project",
+      "button2": "Visit the repository"
+    }
+  },
   "footer": {
-    "GetInTouch": "Get In Touch"
+    "GetInTouch": "GetInTouch",
+    "madeWith": "made with",
+    "by": "by"
+  },
+  "404": {
+    "title": "Page not found - 404",
+    "description": "Page not found"
   }
 }

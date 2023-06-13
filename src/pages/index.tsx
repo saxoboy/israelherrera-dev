@@ -2,8 +2,12 @@ import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import AboutMe from '@/components/AboutMe';
-import Divider from '@/components/Divider';
-import DividerTwo from '@/components/DividerTwo';
+import {
+  Divider,
+  DividerFour,
+  DividerThree,
+  DividerTwo,
+} from '@/components/Divider';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Seo from '@/components/Seo';
@@ -15,10 +19,12 @@ export default function Home() {
       <Seo templateTitle='Israel Herrera - Javascript Fullstack Developer' />
       <Hero />
       <Divider />
-      <AboutMe />
-      <Skills />
-      <DividerTwo />
       <Projects />
+      <DividerTwo />
+      <AboutMe />
+      <DividerThree />
+      <Skills />
+      <DividerFour />
     </>
   );
 }
@@ -26,8 +32,7 @@ export default function Home() {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(locale && (await serverSideTranslations(locale, ['common']))),
-      // Will be passed to the page component as props
+      ...(locale && (await serverSideTranslations(locale ?? 'en', ['common']))),
     },
   };
 };

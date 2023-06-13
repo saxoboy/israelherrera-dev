@@ -1,7 +1,7 @@
 const DividerTwo = () => {
   return (
     <section>
-      <div className='wave-container-footer'></div>
+      <div className='wave-container-two'></div>
     </section>
   );
 };
