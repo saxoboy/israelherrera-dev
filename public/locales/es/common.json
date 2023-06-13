@@ -1,8 +1,43 @@
 {
   "hello-world": "Hola mijines!!",
-  "home": "Inicio",
-  "hi": "👋🏼 Hola!... Yo soy",
+  "menu": {
+    "home": "Inicio",
+    "about-me": "Sobre mi",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "languaje": "English"
+  },
+  "hero": {
+    "hi": "👋🏼 Hola!... Yo soy",
+    "profession": "Desarrolador Fullstack en Javascript",
+    "slogan": "...sin tiempo para rendirse 🚀 🎷",
+    "button": "Descargar mi CV",
+    "button2": "Contacto",
+    "button3": "Visita mi Linkedin"
+  },
+  "aboutme": {
+    "title": "SobreMi",
+    "description": "<p class='pb-4'>¡Ey, qué tal! Soy un programador autodidacta viviendo en Cuenca y nacido Guayaquil - Ecuador 🇪🇨 en el mismo año que Mark Zuckerberg, Cris Evans o Ed Sheeran, si.. un año mágico 😅.</p><p class='pb-4'>Soy un apasionado de la tecnología y un fan de <span class='text-secondary-500'>Javascript/Typescript</span>. Actualmente, me encuentro explorando el fascinante mundo de <span class='text-secondary-500'>React JS</span> y todo su emocionante ecosistema como <span class='text-secondary-500'>Vite - Next - Astros - Gatsby - etc.</span></p><p class='pb-4'>No me conformo solo con eso, también dedico tiempo a aprender VueJs, GO, Dart y cualquier cosa que me permita resolver esos molestos problemas diarios con un toque de código.</p><p class='pb-4'>Sí, <span class='text-secondary-500'>soy un Frontend Developer de profesión y Backend en evolución</span>, pero también soy un entusiasta de la vida espiritual 🙏🏻 y un amante de la música 🎶.</p><p class='pb-4'>Cuando no estoy inmerso en líneas de código, me sumerjo en las dulces melodías de un saxofón 🎷 Yamaha YAS-62 en el <a href='https://asambleacuenca.com' target='_blanck' title='Asamblea de Dios Ecuatoria de Cuenca' class='text-secondary-100 hover:text-secondary-500'>Grupo de Alabanza de mi iglesia local ⛪️ </a>. ¿Qué mejor manera de encontrar el equilibrio entre lo divino y lo digital, verdad?</p><p class='pb-4'>Siempre estoy listo para mezclar beats y bloques de código para crear experiencias increíbles tanto en el navegador como en el escenario.</p><p class='pb-4'>Así que si buscas un <span class='text-secondary-500'>Fullstack Developer en Javascript</span> con una pasión desbordante por la tecnología, un saxofonista de alma y un toque de humor, ¡aquí estoy! Dispuesto a enfrentar cualquier desafío con una sonrisa y un café ☕️ en la mano. ¿Hablamos de código y música mientras hacemos hermosos proyectos?</p>"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Aquí hay algunos proyectos que he realizado recientemente. Si quieres ver más, puedes visitar mi perfil de Github.",
+    "button": "Ver más en Github",
+    "button2": "Visita mi Linkedin",
+    "item1": {
+      "title": "Asamblea de Dios Ecuatoria de Cuenca",
+      "description": "Sitio web de la iglesia Asamblea de Dios Ecuatoria de Cuenca",
+      "button": "Visitar sitio web"
+    }
+  },
+
   "footer": {
-    "GetInTouch": "Contactos"
+    "GetInTouch": "Contacto",
+    "madeWith": "hecho con",
+    "by": "por"
+  },
+  "404": {
+    "title": "Página no encontrada - 404",
+    "subtitle": "La página que buscas no existe"
   }
 }

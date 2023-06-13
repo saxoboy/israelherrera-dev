@@ -1,16 +1,17 @@
+import { useTranslation } from 'next-i18next';
+
 import UnderlineLink from '@/components/links/UnderlineLink';
 import MenuMain from '@/components/MenuMain';
-import SocialMedia from '@/components/SocialMedia/SocialMedia';
+import SocialMedia from '@/components/SocialMedia';
 
-import { TranslateProps } from '@/constant/env';
-
-const Footer = ({ translate }: TranslateProps) => {
+const Footer = () => {
+  const { t } = useTranslation('common');
   return (
     <>
-      <footer className='bg-primary-950 py-8'>
+      <footer className='bg-primary-50 py-8 dark:bg-primary-950'>
         <div className='container mx-auto px-4'>
-          <h2 className='pb-4 text-center text-5xl text-secondary-500 md:text-6xl lg:text-7xl'>{`<${translate(
-            'GetInTouch'
+          <h2 className='pb-4 text-center text-5xl text-secondary-500 md:text-6xl lg:text-7xl'>{`<${t(
+            'footer.GetInTouch'
           )} />`}</h2>
           <div className='flex items-center justify-center'>
             <SocialMedia />
@@ -21,7 +22,7 @@ const Footer = ({ translate }: TranslateProps) => {
         </div>
       </footer>
       <div className='bg-black py-2 text-center text-sm text-white'>
-        © Copyrigth 2023 - Made with ❤️ by{' '}
+        © Copyrigth 2023 - {t('footer.madeWith')} ❤️ {t('footer.by')}{' '}
         <UnderlineLink
           href='https://www.linkedin.com/in/israelherrerae'
           target='_blank'

@@ -3,7 +3,7 @@ import MenuMain from '@/components/MenuMain';
 
 const NavBar = () => {
   return (
-    <header className='p-4'>
+    <header className='bg-primary-950 p-4'>
       <div className='container mx-auto flex items-center justify-between px-4'>
         <Logo />
         <div className='hidden lg:block'>

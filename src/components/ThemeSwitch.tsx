@@ -16,13 +16,13 @@ const ThemeSwitch = () => {
         className={`text-2xl transition duration-150 ease-in-out hover:scale-125 ${
           theme === 'light' && `text-secondary-600`
         }`}
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       />
       <input
         type='checkbox'
         id='theme-switch'
         className='checked: +label:after:bg-black hidden h-0 w-0'
-        checked={theme === 'dark'}
+        checked={theme === 'light' ? false : true}
         onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       />
       <label htmlFor='theme-switch' className='theme-switch'></label>

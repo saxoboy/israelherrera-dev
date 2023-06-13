@@ -7,8 +7,7 @@ import {
   RiTwitterFill,
 } from 'react-icons/ri';
 
-import ThemeSwitch from '@/components/ThemeSwitch';
-
+//import ThemeSwitch from '@/components/ThemeSwitch';
 import { cvUrl } from '@/constant/env';
 
 const SocialMedia = () => {
@@ -41,7 +40,7 @@ const SocialMedia = () => {
       <Link href='mailto:israelherrerae@gmail.com' target='_blank'>
         <RiMailSendFill className='text-2xl text-primary-700 transition duration-150 ease-in-out hover:scale-125 hover:text-primary-500 dark:text-secondary-500' />
       </Link>
-      <ThemeSwitch />
+      {/* <ThemeSwitch /> */}
     </div>
   );
 };
