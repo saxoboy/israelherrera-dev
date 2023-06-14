@@ -21,12 +21,26 @@
   },
   "projects": {
     "title": "Projects",
+    "description": "Here are some projects I've done recently. If you want to see more, you can visit my Github profile",
+    "button": "Visit my Github profile",
     "item1": {
-      "title": "Asamblea de Dios Ecuatoria de Cuenca",
-      "description": "A website for my local church",
-      "button": "Visit the project",
-      "button2": "Visit the repository"
-    }
+      "title": "Portfolio Web",
+      "description": "This is my personal portfolio website. It is a single-page and it is multilanguage. It is a work in progress.",
+      "note": "this project"
+    },
+    "item2": {
+      "title": "Weather App",
+      "description": "This is a single-page application that displays current weather information, 8-day forecasts, and past 5-day weather conditions for 10 different cities. It uses the Open Weather API to obtain weather information and SWR to handle API queries."
+    },
+    "item3": {
+      "title": "Backend - Cake Portfolio",
+      "description": "Endpoint cake portfolio made in Nest.js, Postgres, Graphql, and TypeORM. Frontend coming soon..."
+    },
+    "item4": {
+      "title": "Website Layout Demo",
+      "description": "Website Layout made in Gatsby, React and with Taildwind Css"
+    },
+    "coming-soon": "More projects coming soon..."
   },
   "footer": {
     "GetInTouch": "GetInTouch",
