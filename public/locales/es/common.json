@@ -23,12 +23,24 @@
     "title": "Proyectos",
     "description": "Aquí hay algunos proyectos que he realizado recientemente. Si quieres ver más, puedes visitar mi perfil de Github.",
     "button": "Ver más en Github",
-    "button2": "Visita mi Linkedin",
     "item1": {
-      "title": "Asamblea de Dios Ecuatoria de Cuenca",
-      "description": "Sitio web de la iglesia Asamblea de Dios Ecuatoria de Cuenca",
-      "button": "Visitar sitio web"
-    }
+      "title": "Portafolio Web",
+      "description": "Mi portafolio web personal, hecho con NextJS y TailwindCSS. Es un proyecto en constante evolución, donde aplico mis conocimientos y aprendo nuevas tecnologías.",
+      "note": "este proyecto"
+    },
+    "item2": {
+      "title": "Weather App",
+      "description": "Esta es una aplicación de una sola página que muestra información meteorológica actual, pronósticos de 8 días y condiciones meteorológicas de los últimos 5 días para 10 ciudades diferentes. Utiliza la API Open Weather para obtener información meteorológica y SWR para gestionar las consultas de la API."
+    },
+    "item3": {
+      "title": "Portafolio de Pasteles",
+      "description": "Endpoint de portafolio de pasteles, hecho en Nest.js, Postgres, Graphql and TypeORM. Frontend muy pronto..."
+    },
+    "item4": {
+      "title": "Maquetado Demo Web",
+      "description": "Maqueta de sitio web. Demo realizado en Gatsby, React y con Taildwind CSS"
+    },
+    "coming-soon": "Más proyectos próximamente..."
   },
 
   "footer": {
