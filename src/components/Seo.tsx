@@ -9,7 +9,7 @@ const defaultMeta = {
   url: 'https://www.israelherrera.dev',
   type: 'website',
   robots: 'follow, index',
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
+  image: 'https://israelherrera.dev/images/portada.png',
 };
 
 type SeoProps = {
