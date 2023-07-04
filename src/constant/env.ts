@@ -2,7 +2,7 @@ export const isProd = process.env.NODE_ENV === 'production';
 export const isLocal = process.env.NODE_ENV === 'development';
 
 export const cvUrl =
-  'https://drive.google.com/file/d/1ndpIit-tL3DXQ2ixqHccvy2td_Nr_WqF/view?usp=sharing';
+  'https://drive.google.com/file/d/1uDvEWfLyXxgoVtKzUjYU-mCqsK_dK3rv/view?usp=sharing';
 
 export const showLogger = isLocal
   ? true

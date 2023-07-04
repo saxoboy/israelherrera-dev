@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { RiChromeFill, RiGithubFill } from 'react-icons/ri';
 
@@ -43,7 +44,6 @@ const Projects = () => {
               imgClassName='rounded-xl shadow-md'
             />
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
-              {/* This is my personal portfolio website. It is a single-page */}
               {t('projects.item1.description')}
             </p>
             <div className='grid grid-cols-3 content-start pb-6 text-center uppercase text-primary-700'>
@@ -78,15 +78,17 @@ const Projects = () => {
             <h3 className='pb-4 text-center text-4xl text-primary-950'>
               {t('projects.item2.title')}
             </h3>
-            <NextImage
-              useSkeleton
-              src='/images/project/weather-app.png'
-              width='320'
-              height='320'
-              alt='Weather App'
-              className='mx-auto block w-80 pb-4 md:w-80'
-              imgClassName='rounded-xl shadow-md'
-            />
+            <Link href='https://weather-app-saxoboy.netlify.app/'>
+              <NextImage
+                useSkeleton
+                src='/images/project/weather-app.png'
+                width='320'
+                height='320'
+                alt='Weather App'
+                className='mx-auto block w-80 pb-4 md:w-80'
+                imgClassName='rounded-xl shadow-md'
+              />
+            </Link>
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item2.description')}
             </p>
@@ -126,15 +128,17 @@ const Projects = () => {
             <h3 className='pb-4 text-center text-4xl text-primary-950'>
               {t('projects.item3.title')}
             </h3>
-            <NextImage
-              useSkeleton
-              src='/images/project/backend-cake-portfolio.png'
-              width='320'
-              height='320'
-              alt='Backend - Cake Portfolio'
-              className='mx-auto block w-80 pb-4 md:w-80'
-              imgClassName='rounded-xl shadow-md'
-            />
+            <Link href='https://github.com/saxoboy/postgres-cakes-porfolio-app-server'>
+              <NextImage
+                useSkeleton
+                src='/images/project/backend-cake-portfolio.png'
+                width='320'
+                height='320'
+                alt='Backend - Cake Portfolio'
+                className='mx-auto block w-80 pb-4 md:w-80'
+                imgClassName='rounded-xl shadow-md'
+              />
+            </Link>
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item3.description')}
             </p>
@@ -154,14 +158,6 @@ const Projects = () => {
                 <RiGithubFill className='mr-2 text-2xl' />
                 Code
               </ButtonLink>
-              {/* <ButtonLink
-                variant='light'
-                href='https://weather-app-saxoboy.netlify.app/'
-                target='_blank'
-              >
-                <RiChromeFill className='mr-2 text-2xl' />
-                Demo
-              </ButtonLink> */}
             </div>
           </div>
           {/* item */}
@@ -169,15 +165,17 @@ const Projects = () => {
             <h3 className='pb-4 text-center text-4xl text-primary-950'>
               {t('projects.item4.title')}
             </h3>
-            <NextImage
-              useSkeleton
-              src='/images/project/website-layout.png'
-              width='320'
-              height='320'
-              alt='Website Layout'
-              className='mx-auto block w-80 pb-4 md:w-80'
-              imgClassName='rounded-xl shadow-md'
-            />
+            <Link href='https://github.com/saxoboy/avalith-demo'>
+              <NextImage
+                useSkeleton
+                src='/images/project/website-layout.png'
+                width='320'
+                height='320'
+                alt='Website Layout'
+                className='mx-auto block w-80 pb-4 md:w-80'
+                imgClassName='rounded-xl shadow-md'
+              />
+            </Link>
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item4.description')}
             </p>
