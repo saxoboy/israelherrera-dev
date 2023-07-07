@@ -23,15 +23,13 @@ const Hero = () => {
             priority
           />
         </div>
-        <div className='w-full pt-6 text-center text-primary-600 dark:text-primary-50 md:w-1/2 lg:pt-0 lg:text-left'>
+        <div className='w-full pt-6 text-center text-primary-50 md:w-1/2 lg:pt-0 lg:text-left'>
           <h4 className='text-3xl lg:text-4xl'>{`${t('common:hero.hi')}`}</h4>
           <h1 className='text-3xl lg:text-5xl xl:text-6xl'>
             <span className='text-gray-500'>{`<`}</span> Israel Herrera{' '}
             <span className='text-gray-500'>{`</>`}</span>
           </h1>
-          <h2 className='text-secondary-700 dark:text-secondary-500'>
-            {`${t('hero.profession')}`}
-          </h2>
+          <h2 className='text-secondary-500'>{`${t('hero.profession')}`}</h2>
           <p className='mt-2 text-lg'>
             <span className='italic'>{`${t('hero.slogan')}`} </span>
           </p>

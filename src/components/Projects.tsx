@@ -8,7 +8,7 @@ import NextImage from '@/components/NextImage';
 const Projects = () => {
   const { t } = useTranslation('common');
   return (
-    <section id='projects' className='bg-primary-50 py-12 dark:bg-primary-500'>
+    <section id='projects' className='bg-primary-500 py-12'>
       <div className='container mx-auto px-4'>
         <h2 className='pb-8 text-center text-5xl text-secondary-500 md:text-6xl lg:text-left lg:text-7xl'>{`<${t(
           'projects.title'
