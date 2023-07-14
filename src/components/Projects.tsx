@@ -27,7 +27,7 @@ const Projects = () => {
         </div>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3'>
           {/* item */}
-          <div className='flex flex-col justify-center rounded-3xl bg-gradient-radial from-primary-100 to-primary-500 p-4 pb-8 shadow-md'>
+          <div className='flex flex-col justify-center rounded-3xl bg-gradient-radial from-primary-100 to-primary-500 p-4 shadow-md'>
             <h3 className='pb-4 text-center text-4xl text-primary-950'>
               {t('projects.item1.title')}
               <span className='block text-xs text-secondary-200'>
@@ -46,17 +46,31 @@ const Projects = () => {
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item1.description')}
             </p>
-            <div className='grid grid-cols-3 content-start pb-6 text-center uppercase text-primary-700'>
-              <div className='transition-all hover:bg-gray-100'>React</div>
-              <div className='transition-all hover:bg-gray-100'>TypeScript</div>
-              <div className='transition-all hover:bg-gray-100'>Next.JS</div>
-              <div className='transition-all hover:bg-gray-100'>
-                Tailwind CSS
+            <div className='flex flex-wrap items-center justify-evenly gap-4 pb-8 text-center text-primary-700'>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  React.JS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  TypeScript
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Next.JS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Tailwind CSS
+                </span>
               </div>
             </div>
             <div className='flex items-center justify-around gap-x-4'>
               <ButtonLink
-                variant='primary'
+                variant='light'
                 href='https://github.com/saxoboy/israelherrera-dev'
                 target='_blank'
               >
@@ -64,9 +78,9 @@ const Projects = () => {
                 Code
               </ButtonLink>
               <ButtonLink
-                variant='light'
                 href='https://israelherrera.dev'
                 target='_blank'
+                className='rounded-md bg-primary-600 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-100'
               >
                 <RiChromeFill className='mr-2 text-2xl' />
                 Demo
@@ -92,21 +106,41 @@ const Projects = () => {
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item2.description')}
             </p>
-            <div className='grid grid-cols-3 content-start pb-6 text-center uppercase text-primary-700'>
-              <div className='transition-all hover:bg-gray-100'>React</div>
-              <div className='transition-all hover:bg-gray-100'>TypeScript</div>
-              <div className='transition-all hover:bg-gray-100'>Vite</div>
-              <div className='transition-all hover:bg-gray-100'>
-                Tailwind CSS
+            <div className='flex flex-wrap items-center justify-evenly gap-4 pb-8 text-center text-primary-700'>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  React.JS
+                </span>
               </div>
-              <div className='transition-all hover:bg-gray-100'>
-                Open Weather
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  TypeScript
+                </span>
               </div>
-              <div className='transition-all hover:bg-gray-100'>API SWR</div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Vite.Js
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Tailwind CSS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Open Weather
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  API SWR
+                </span>
+              </div>
             </div>
             <div className='flex items-center justify-around gap-x-4'>
               <ButtonLink
-                variant='primary'
+                variant='light'
                 href='https://github.com/saxoboy/weather-app-v2'
                 target='_blank'
               >
@@ -114,7 +148,7 @@ const Projects = () => {
                 Code
               </ButtonLink>
               <ButtonLink
-                variant='light'
+                className='rounded-md bg-primary-600 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-100'
                 href='https://weather-app-saxoboy.netlify.app/'
                 target='_blank'
               >
@@ -142,16 +176,36 @@ const Projects = () => {
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item3.description')}
             </p>
-            <div className='grid grid-cols-3 content-start pb-6 text-center uppercase text-primary-700'>
-              <div className='transition-all hover:bg-gray-100'>TypeScript</div>
-              <div className='transition-all hover:bg-gray-100'>Nest</div>
-              <div className='transition-all hover:bg-gray-100'>Postgres</div>
-              <div className='transition-all hover:bg-gray-100'>Graphql</div>
-              <div className='transition-all hover:bg-gray-100'>Passport</div>
+            <div className='flex flex-wrap items-center justify-evenly gap-4 pb-8 text-center text-primary-700'>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  TypeScript
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Nest.JS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Postgres
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Graphql
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Passport
+                </span>
+              </div>
             </div>
             <div className='flex items-center justify-around gap-x-4'>
               <ButtonLink
-                variant='primary'
+                variant='light'
                 href='https://github.com/saxoboy/postgres-cakes-porfolio-app-server'
                 target='_blank'
               >
@@ -179,16 +233,26 @@ const Projects = () => {
             <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
               {t('projects.item4.description')}
             </p>
-            <div className='grid grid-cols-3 content-start pb-6 text-center uppercase text-primary-700'>
-              <div className='transition-all hover:bg-gray-100'>React</div>
-              <div className='transition-all hover:bg-gray-100'>Gatsby</div>
-              <div className='transition-all hover:bg-gray-100'>
-                Tailwind CSS
+            <div className='flex flex-wrap items-center justify-evenly gap-4 pb-8 text-center text-primary-700'>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  React
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Gatsby
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Tailwind CSS
+                </span>
               </div>
             </div>
             <div className='flex items-center justify-around gap-x-4'>
               <ButtonLink
-                variant='primary'
+                variant='light'
                 href='https://github.com/saxoboy/avalith-demo'
                 target='_blank'
               >
@@ -196,9 +260,9 @@ const Projects = () => {
                 Code
               </ButtonLink>
               <ButtonLink
-                variant='light'
                 href='https://thirsty-engelbart-abee30.netlify.app/'
                 target='_blank'
+                className='rounded-md bg-primary-600 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-100'
               >
                 <RiChromeFill className='mr-2 text-2xl' />
                 Demo

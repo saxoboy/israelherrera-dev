@@ -8,7 +8,7 @@ const Footer = () => {
   const { t } = useTranslation('common');
   return (
     <>
-      <footer className='bg-primary-950 py-8'>
+      <footer id='contact' className='bg-primary-950 py-8'>
         <div className='container mx-auto px-4'>
           <h2 className='pb-4 text-center text-5xl text-secondary-500 md:text-6xl lg:text-7xl'>{`<${t(
             'footer.GetInTouch'

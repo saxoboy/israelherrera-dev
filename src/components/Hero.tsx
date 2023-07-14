@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
           <div className='flex flex-col items-center justify-center gap-x-4 gap-y-4 pt-8 lg:flex-row lg:items-start lg:justify-start xl:items-center'>
             <ButtonLink
-              className='block rounded-md bg-secondary-500 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-50'
+              className='block rounded-md bg-primary-900 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-50'
               href={cvUrl}
               target='_blanck'
             >

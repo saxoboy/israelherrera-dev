@@ -30,17 +30,17 @@ const MenuMain = () => {
           )}`}</UnderlineLink>
         </li>
         <li className='px-4 py-2'>
+          <UnderlineLink href='/#projects'>{`${t(
+            'common:menu.projects'
+          )}`}</UnderlineLink>
+        </li>
+        <li className='px-4 py-2'>
           <UnderlineLink href='/#about-me'>{`${t(
             'common:menu.about-me'
           )}`}</UnderlineLink>
         </li>
         <li className='px-4 py-2'>
-          <UnderlineLink href='/'>{`${t(
-            'common:menu.projects'
-          )}`}</UnderlineLink>
-        </li>
-        <li className='px-4 py-2'>
-          <UnderlineLink href='/'>{`${t(
+          <UnderlineLink href='/#contact'>{`${t(
             'common:menu.contact'
           )}`}</UnderlineLink>
         </li>
