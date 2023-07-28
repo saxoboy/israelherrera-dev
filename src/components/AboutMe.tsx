@@ -11,7 +11,7 @@ const AboutMe = () => {
           {`<${t('aboutme.title')} />`}
         </h2>
         <div className='flex flex-col-reverse justify-between gap-x-6 lg:flex-row lg:items-center'>
-          <div className='w-full text-justify text-lg text-white lg:w-2/3'>
+          <div className='w-full text-lg text-white lg:w-2/3'>
             <div
               dangerouslySetInnerHTML={{
                 __html: t('aboutme.description') || '',

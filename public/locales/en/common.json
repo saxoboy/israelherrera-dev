@@ -25,12 +25,12 @@
     "button": "Visit my Github profile",
     "item1": {
       "title": "Portfolio Web",
-      "description": "This is my personal portfolio website. It is a single-page and it is multilanguage. It is a work in progress.",
+      "description": "This is my personal portfolio website. It is a single-page and it is multilingual. It is a work in progress.",
       "note": "this project"
     },
     "item2": {
       "title": "Weather App",
-      "description": "This is a single-page application that displays current weather information, 8-day forecasts, and past 5-day weather conditions for 10 different cities. It uses the Open Weather API to obtain weather information and SWR to handle API queries."
+      "description": "Single-Page app that displays current weather information, 8-day and 5-day forecasts for 10 different cities. It uses the Open Weather API and SWR to handle API queries."
     },
     "item3": {
       "title": "Backend - Cake Portfolio",
@@ -38,7 +38,7 @@
     },
     "item4": {
       "title": "Website Layout Demo",
-      "description": "Website Layout made in Gatsby, React and with Taildwind Css"
+      "description": "Website Layout made in Gatsby, React and with Tailwind Css"
     },
     "coming-soon": "More projects coming soon..."
   },

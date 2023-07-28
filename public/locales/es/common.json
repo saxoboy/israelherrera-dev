@@ -30,7 +30,7 @@
     },
     "item2": {
       "title": "Weather App",
-      "description": "Esta es una aplicación de una sola página que muestra información meteorológica actual, pronósticos de 8 días y condiciones meteorológicas de los últimos 5 días para 10 ciudades diferentes. Utiliza la API Open Weather para obtener información meteorológica y SWR para gestionar las consultas de la API."
+      "description": "Aplicación de una sola página que muestra información meteorológica actual, pronósticos de 8 días y de los últimos 5 días para 10 ciudades diferentes. Utiliza la API Open Weather y SWR para gestionar las consultas de la API."
     },
     "item3": {
       "title": "Portafolio de Pasteles",
