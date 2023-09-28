@@ -5,7 +5,8 @@
     "about-me": "Sobre mi",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "languaje": "English"
+    "languaje": "English",
+    "experience": "Experiencia Laboral"
   },
   "hero": {
     "hi": "👋🏼 Hola!... Yo soy",
@@ -17,7 +18,7 @@
   },
   "aboutme": {
     "title": "SobreMi",
-    "description": "<p class='pb-4'>¡Ey, qué tal! Soy un programador autodidacta viviendo en Cuenca y nacido Guayaquil - Ecuador 🇪🇨 en el mismo año que Mark Zuckerberg, Cris Evans o Ed Sheeran, si.. un año mágico 😅.</p><p class='pb-4'>Siento un profundo interés por la tecnología y principalmente de <span class='text-secondary-500'>Javascript/Typescript</span>. Actualmente, me encuentro explorando el mundo de <span class='text-secondary-500'>React JS</span> y todo su evolucionante ecosistema como <span class='text-secondary-500'>Vite - Next - Astros - Gatsby - etc.</span></p><p class='pb-4'>No me conformo solo con eso, también dedico tiempo a aprender VueJs, GO, Dart y cualquier cosa que me permita resolver esos molestos problemas diarios con un toque de código.</p><p class='pb-4'>Sí, <span class='text-secondary-500'>soy un Frontend Developer de profesión y Backend en evolución</span>, pero también soy un entusiasta de la vida espiritual 🙏🏻 y un amante de la música 🎶.</p><p class='pb-4'>Cuando no estoy inmerso en líneas de código, me relajo en las dulces melodías de un saxofón 🎷 Yamaha YAS-62 en el <a href='https://asambleacuenca.com' target='_blanck' title='Asamblea de Dios Ecuatoria de Cuenca' class='text-secondary-100 hover:text-secondary-500'>Grupo de Alabanza de mi iglesia local ⛪️ </a>. ¿Qué mejor manera de encontrar el equilibrio entre lo divino y lo digital, verdad?</p><p class='pb-4'>Entonces, si buscas un <span class='text-secondary-500'>Fullstack Developer en Javascript</span> con un interés por la tecnología, un saxofonista de alma y un toque de humor, ¡aquí estoy! Dispuesto a enfrentar cualquier desafío con una sonrisa y un café ☕️ en la mano. ¿Hablamos de código y música mientras hacemos proyectos revolucionarios?</p>"
+    "description": "<p class='pb-4'>¡Ey, qué tal! Soy un programador autodidacta viviendo en Cuenca y nacido Guayaquil - Ecuador 🇪🇨 en el mismo año que Mark Zuckerberg, Cris Evans o Ed Sheeran, si... un año mágico 😅.</p><p class='pb-4'>Siento un profundo interés por la tecnología y principalmente de <span class='text-secondary-500'>Javascript / Typescript</span>. Actualmente, me encuentro explorando el mundo de <span class='text-secondary-500'>React JS</span> y todo su evolucionante ecosistema como <span class='text-secondary-500'>Vite Js - Next Js - Astros Js - Gatsby Js - etc.</span></p><p class='pb-4'>No me conformo solo con eso, también dedico tiempo a aprender VueJs, GO, Dart y cualquier cosa que me permita resolver esos molestos problemas diarios con un toque de código.</p><p class='pb-4'>Sí, <span class='text-secondary-500'>soy un Frontend Developer de profesión y Backend en evolución</span>, pero también soy un entusiasta de la vida espiritual 🙏🏻 y un amante de la música 🎶.</p><p class='pb-4'>Cuando no estoy inmerso en líneas de código, me relajo en las dulces melodías de un saxofón 🎷 Yamaha YAS-62 en el <a href='https://asambleacuenca.com' target='_blanck' title='Asamblea de Dios Ecuatoria de Cuenca' class='text-secondary-100 hover:text-secondary-500'>Grupo de Alabanza de mi iglesia local ⛪️ </a>. ¿Qué mejor manera de encontrar el equilibrio entre lo divino y lo digital, verdad?</p><p class='pb-4'>Entonces, si buscas un <span class='text-secondary-500'>Fullstack Developer en Javascript</span> con un interés por la tecnología, un saxofonista de alma y un toque de humor, ¡aquí estoy! Dispuesto a enfrentar cualquier desafío con una sonrisa y un café ☕️ en la mano. ¿Hablamos de código y música mientras hacemos proyectos revolucionarios?</p>"
   },
   "projects": {
     "title": "Proyectos",
@@ -40,9 +41,24 @@
       "title": "Maquetado Demo Web",
       "description": "Maqueta de sitio web. Demo realizado en Gatsby, React y con Taildwind CSS"
     },
+    "item5": {
+      "title": "Agenda de Citas",
+      "description": "Sistema de Agenda de Citas, permite elegir una fecha y hora para agendar una cita. CRUD completo."
+    },
     "coming-soon": "Más proyectos próximamente..."
   },
-
+  "experience": {
+    "title": "Experiencia Laboral",
+    "description": "descripcion de experiencia laboral",
+    "projectTitle": "Proyecto",
+    "projectDescription": "Descripción Proyecto",
+    "projectStack": "Stack Tecnológico",
+    "experienceDate1": "Abril 2009 - Septiembre 2018",
+    "experienceDate2": "Noviembre 2018 - Diciembre 2020",
+    "experienceDate3": "Diciembre 2020 - Abril 2021",
+    "experienceDate4": "Abril 2021 - Agosto 2022",
+    "experienceDate5": "Septiembre 2022 - Marzo 2023"
+  },
   "footer": {
     "GetInTouch": "Contacto",
     "madeWith": "hecho con",

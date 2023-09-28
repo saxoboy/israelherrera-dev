@@ -5,7 +5,8 @@
     "about-me": "About me",
     "projects": "Projects",
     "contact": "Contact",
-    "languaje": "Español"
+    "languaje": "Español",
+    "experience": "Work Experience"
   },
   "hero": {
     "hi": "👋🏼 Hello there!... I'm",
@@ -40,7 +41,23 @@
       "title": "Website Layout Demo",
       "description": "Website Layout made in Gatsby, React and with Tailwind Css"
     },
+    "item5": {
+      "title": "Appointment Schedule",
+      "description": "Appointment Scheduling System, allows you to choose a date and time to schedule an appointment. Complete CRUD."
+    },
     "coming-soon": "More projects coming soon..."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "description": "descripcion de experiencia laboral",
+    "projectTitle": "Project",
+    "projectDescription": "Project Description",
+    "projectStack": "Technology Stack",
+    "experienceDate1": "April 2009 - September 2018",
+    "experienceDate2": "November 2018 - December 2020",
+    "experienceDate3": "Diciembre 2020 - Abril 2021",
+    "experienceDate4": "December 2020 - April 2021",
+    "experienceDate5": "September 2022 - March 2023"
   },
   "footer": {
     "GetInTouch": "GetInTouch",
