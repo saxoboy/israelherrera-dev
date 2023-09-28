@@ -8,6 +8,7 @@ import {
   DividerThree,
   DividerTwo,
 } from '@/components/Divider';
+import Experience from '@/components/Experience';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Seo from '@/components/Seo';
@@ -21,9 +22,11 @@ export default function Home() {
       <Divider />
       <Projects />
       <DividerTwo />
-      <AboutMe />
+      <Experience />
       <DividerThree />
       <Skills />
+      <AboutMe />
+      <DividerThree />
       <DividerFour />
     </>
   );

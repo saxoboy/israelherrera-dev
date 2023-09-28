@@ -25,7 +25,75 @@ const Projects = () => {
             <RiGithubFill className='mr-2 text-2xl' /> {t('projects.button')}
           </ButtonLink>
         </div>
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3'>
+          {/* item */}
+          <div className='flex flex-col justify-center rounded-3xl bg-gradient-radial from-primary-100 to-primary-500 p-4 shadow-md'>
+            <h3 className='pb-4 text-center text-4xl text-primary-950'>
+              {t('projects.item5.title')}
+            </h3>
+            <NextImage
+              useSkeleton
+              src='/images/project/Appointment-Schedule.png'
+              width='320'
+              height='320'
+              alt='Portfolio Web'
+              className='mx-auto block w-80 pb-4 md:w-80'
+              imgClassName='rounded-xl shadow-md'
+            />
+            <p className='mx-0 px-8 pb-6 text-center text-primary-900'>
+              {t('projects.item5.description')}
+            </p>
+            <div className='flex flex-wrap items-center justify-evenly gap-4 pb-8 text-center text-primary-700'>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  React.JS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  TypeScript
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Next.JS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Tailwind CSS
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Firebase
+                </span>
+              </div>
+              <div>
+                <span className='rounded-lg bg-secondary-500 px-2 py-1 transition-all hover:bg-secondary-200'>
+                  Zustand
+                </span>
+              </div>
+            </div>
+            <div className='flex items-center justify-around gap-x-4'>
+              <ButtonLink
+                variant='light'
+                href='https://github.com/saxoboy/odonto-system'
+                target='_blank'
+              >
+                <RiGithubFill className='mr-2 text-2xl' />
+                Code
+              </ButtonLink>
+              <ButtonLink
+                href='https://odonto-system-psi.vercel.app'
+                target='_blank'
+                className='rounded-md bg-primary-600 px-4 py-2 text-center text-primary-50 shadow-md transition duration-150 ease-in-out hover:bg-primary-800 hover:text-primary-100'
+              >
+                <RiChromeFill className='mr-2 text-2xl' />
+                Demo
+              </ButtonLink>
+            </div>
+          </div>
           {/* item */}
           <div className='flex flex-col justify-center rounded-3xl bg-gradient-radial from-primary-100 to-primary-500 p-4 shadow-md'>
             <h3 className='pb-4 text-center text-4xl text-primary-950'>
