@@ -2,6 +2,12 @@
   "name": "israelherrera-dev",
   "version": "2.0.0",
   "private": true,
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=20",
+    "yarn": ">=1.22",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev -p 4000 --turbopack",
     "build": "next build",
