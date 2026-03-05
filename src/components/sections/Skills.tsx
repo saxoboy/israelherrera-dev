@@ -1,87 +1,174 @@
 'use client';
 
 import { motion } from 'motion/react';
-import type { Skill } from '@/data/en/skills';
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPhp,
+  SiReact,
+  SiNextdotjs,
+  SiVite,
+  SiGatsby,
+  SiRedux,
+  SiApollographql,
+  SiReactquery,
+  SiVuedotjs,
+  SiNodedotjs,
+  SiNestjs,
+  SiExpress,
+  SiGraphql,
+  SiStrapi,
+  SiTailwindcss,
+  SiMui,
+  SiStyledcomponents,
+  SiBootstrap,
+  SiPostgresql,
+  SiMysql,
+  SiMongodb,
+  SiFirebase,
+  SiGithub,
+  SiJest,
+  SiTestinglibrary,
+  SiStorybook,
+  SiFigma,
+  SiDocker,
+  SiShadcnui,
+  SiSolidity,
+  SiSanity,
+  SiContentful,
+  SiSupabase,
+  SiPostman,
+  SiGooglecloud,
+  SiNx,
+} from 'react-icons/si';
+import { VscAzureDevops } from 'react-icons/vsc';
+import { FaAws } from 'react-icons/fa';
+import type { SkillCategory } from '@/data/en/skills';
+
+const iconMap: Record<string, React.ElementType> = {
+  SiJavascript,
+  SiTypescript,
+  SiPhp,
+  SiReact,
+  SiNextdotjs,
+  SiVite,
+  SiGatsby,
+  SiRedux,
+  SiApollographql,
+  SiReactquery,
+  SiVuedotjs,
+  SiNodedotjs,
+  SiNestjs,
+  SiExpress,
+  SiGraphql,
+  SiStrapi,
+  SiTailwindcss,
+  SiShadcnui,
+  SiMui,
+  SiStyledcomponents,
+  SiBootstrap,
+  SiPostgresql,
+  SiMysql,
+  SiMongodb,
+  SiFirebase,
+  SiGithub,
+  SiJest,
+  SiTestinglibrary,
+  SiStorybook,
+  SiFigma,
+  SiAzuredevops: VscAzureDevops,
+  SiDocker,
+  SiAmazonwebservices: FaAws,
+  SiSolidity,
+  SiSanity,
+  SiContentful,
+  SiSupabase,
+  SiPostman,
+  SiGooglecloud,
+  SiNx,
+};
 
 interface SkillsProps {
   lang: 'en' | 'es';
-  mastered: Skill[];
-  learning: Skill[];
+  categories: SkillCategory[];
+  title?: string;
+  subtitle?: string;
+  learningLabel?: string;
 }
 
-function SkillBadge({ skill, index }: { skill: Skill; index: number }) {
+export default function Skills({
+  categories,
+  title = 'Skills',
+  subtitle,
+  learningLabel = 'learning',
+}: SkillsProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.3, delay: index * 0.04 }}
-      className='card-base px-3 py-2 flex items-center gap-2 hover:border-lime/40 transition-all'
-    >
-      <span className='text-lime text-sm'>▸</span>
-      <span className='font-mono text-base md:text-sm text-text'>
-        {skill.name}
-      </span>
-    </motion.div>
-  );
-}
-
-export default function Skills({ lang, mastered, learning }: SkillsProps) {
-  const isEs = lang === 'es';
-
-  return (
-    <section id='skills' className='py-20 px-6'>
-      <div className='mx-auto max-w-5xl'>
-        {/* Section header */}
+    <section id='skills' className='py-24 px-6'>
+      <div className='mx-auto max-w-6xl w-full'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className='mb-12 text-center'
+          className='mb-16'
         >
-          <p className='font-mono text-sm tracking-widest text-lime uppercase mb-3'>
-            [{isEs ? 'HABILIDADES' : 'SKILLS'}]
-          </p>
-          <h2 className='text-3xl md:text-4xl font-bold text-gradient-lime'>
-            {isEs ? 'Tecnologías' : 'Technologies'}
+          <h2 className='text-4xl md:text-5xl font-bold text-gradient-lime'>
+            {title}
           </h2>
+          {subtitle && (
+            <p className='text-muted mt-3 text-base md:text-sm'>{subtitle}</p>
+          )}
         </motion.div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-          {/* Mastered */}
-          <div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+        <div className='flex flex-col gap-10'>
+          {categories.map((category, catIndex) => (
+            <motion.div
+              key={category.label}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className='font-mono text-sm text-lime mb-4 uppercase tracking-widest'
+              transition={{ duration: 0.5, delay: catIndex * 0.07 }}
+              className='flex flex-col lg:flex-row lg:gap-8'
             >
-              {isEs ? '// Lo que manejo' : '// What I work with'}
-            </motion.p>
-            <div className='flex flex-wrap gap-2'>
-              {mastered.map((skill, i) => (
-                <SkillBadge key={skill.name} skill={skill} index={i} />
-              ))}
-            </div>
-          </div>
+              {/* Category label */}
+              <div className='w-full lg:w-1/4 mb-4 lg:mb-0 lg:pt-2'>
+                <h3 className='font-mono text-lg text-text font-semibold'>
+                  {category.label}
+                </h3>
+              </div>
 
-          {/* Learning */}
-          <div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className='font-mono text-sm text-lime mb-4 uppercase tracking-widest'
-            >
-              {isEs ? '// Estoy aprendiendo' : '// Currently learning'}
-            </motion.p>
-            <div className='flex flex-wrap gap-2'>
-              {learning.map((skill, i) => (
-                <SkillBadge key={skill.name} skill={skill} index={i} />
-              ))}
-            </div>
-          </div>
+              {/* Skills grid */}
+              <ul className='w-full lg:w-3/4 flex flex-wrap gap-3'>
+                {category.skills.map((skill, skillIndex) => {
+                  const Icon = iconMap[skill.icon];
+                  return (
+                    <motion.li
+                      key={skill.name}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.3,
+                        delay: catIndex * 0.07 + skillIndex * 0.04,
+                      }}
+                      whileHover={{ scale: 1.05 }}
+                      className='card-base flex flex-col items-center justify-center gap-2 p-4 min-w-22 cursor-default hover:border-lime/40 transition-colors'
+                    >
+                      {Icon && <Icon className='text-lime' size={28} />}
+                      <span className='font-mono text-xs text-muted text-center leading-tight'>
+                        {skill.name}
+                      </span>
+                      {skill.learning && (
+                        <span className='font-mono text-[10px] text-lime/50'>
+                          {learningLabel}
+                        </span>
+                      )}
+                    </motion.li>
+                  );
+                })}
+              </ul>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

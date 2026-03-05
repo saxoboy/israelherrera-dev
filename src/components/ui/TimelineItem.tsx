@@ -68,6 +68,9 @@ export default function TimelineItem({
             <span className='font-mono text-base md:text-sm text-muted border border-border px-2 py-0.5 rounded'>
               {item.period}
             </span>
+            <span className='font-mono text-xs text-lime/60'>
+              {item.duration}
+            </span>
             <span className='font-mono text-base md:text-sm text-muted'>
               {item.location}
             </span>

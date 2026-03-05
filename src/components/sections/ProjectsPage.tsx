@@ -55,7 +55,7 @@ export default function ProjectsPage({ lang, data }: ProjectsPageProps) {
           transition={{ duration: 0.5, delay: 0.2 }}
           className='flex flex-wrap gap-2 justify-center mb-10'
         >
-          {allTechs.slice(0, 15).map((tech) => (
+          {allTechs.map((tech) => (
             <button
               key={tech}
               onClick={() => setFilter(tech)}

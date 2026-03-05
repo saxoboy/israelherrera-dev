@@ -2,6 +2,7 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
+  duration: string;
   location: string;
   client?: string;
   description: string[];
@@ -14,6 +15,7 @@ export const experience: Experience[] = [
     company: 'Construex',
     role: 'Desarrollador React Frontend',
     period: 'Nov 2023 — Ene 2026',
+    duration: '2 años 2 meses',
     location: 'Quito, Ecuador',
     current: true,
     description: [
@@ -35,6 +37,7 @@ export const experience: Experience[] = [
     company: 'Clever IT Group',
     role: 'Desarrollador React Full Stack',
     period: 'Sep 2022 — Mar 2023',
+    duration: '6 meses',
     location: 'Santiago, Chile',
     client: 'Universidad San Sebastián — Atando Cabos',
     description: [
@@ -58,6 +61,7 @@ export const experience: Experience[] = [
     company: 'SuperDigital by Grupo Santander',
     role: 'React Frontend Developer',
     period: 'Abr 2021 — Ago 2022',
+    duration: '1 año 4 meses',
     location: 'Buenos Aires, Argentina',
     client: 'Santander Group',
     description: [
@@ -81,6 +85,7 @@ export const experience: Experience[] = [
     company: 'Avalith',
     role: 'React Frontend Developer',
     period: 'Dic 2020 — Abr 2021',
+    duration: '4 meses',
     location: 'Mar del Plata, Argentina',
     description: [
       'Desarrollé el sitio web corporativo de Avalith, una consultora tecnológica, utilizando React, Gatsby.js y Tailwind CSS, con enfoque en rendimiento y optimización SEO.',
@@ -93,6 +98,7 @@ export const experience: Experience[] = [
     company: 'Freelancer',
     role: 'Desarrollador Full Stack',
     period: 'Nov 2018 — Dic 2020',
+    duration: '2 años 1 mes',
     location: 'Remoto',
     client: 'Shaddai Solutions LLC (USA)',
     description: [
@@ -113,6 +119,7 @@ export const experience: Experience[] = [
     company: 'Desarrollador Web — Varias Empresas',
     role: 'Desarrollador Web',
     period: 'Abr 2009 — Sep 2018',
+    duration: '9 años 5 meses',
     location: 'Cuenca, Ecuador',
     description: [
       'Construí y mantuve más de 20 sitios y aplicaciones web para clientes locales en los sectores de turismo, hotelería y servicios en Ecuador.',

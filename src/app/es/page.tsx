@@ -5,10 +5,12 @@ import Hero from '@/components/sections/Hero';
 import Projects from '@/components/sections/Projects';
 import Experience from '@/components/sections/Experience';
 import Skills from '@/components/sections/Skills';
+import About from '@/components/sections/About';
 import { personal } from '@/data/es/personal';
 import { experience } from '@/data/es/experience';
-import { skillsMastered, skillsLearning } from '@/data/es/skills';
+import { skillCategories } from '@/data/es/skills';
 import { projects } from '@/data/es/projects';
+import { about } from '@/data/es/about';
 
 export const metadata: Metadata = {
   title: 'Israel Herrera — Desarrollador Full Stack',
@@ -28,7 +30,14 @@ export default function HomePageEs() {
         <Hero lang='es' data={personal} />
         <Projects lang='es' data={projects} />
         <Experience lang='es' data={experience} />
-        <Skills lang='es' mastered={skillsMastered} learning={skillsLearning} />
+        <Skills
+          lang='es'
+          categories={skillCategories}
+          title='Habilidades'
+          subtitle='lo que sé y lo que estoy aprendiendo'
+          learningLabel='aprendiendo'
+        />
+        <About lang='es' data={about} />
       </main>
       <Footer lang='es' />
     </>

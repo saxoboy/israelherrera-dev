@@ -2,6 +2,7 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
+  duration: string;
   location: string;
   client?: string;
   description: string[];
@@ -14,6 +15,7 @@ export const experience: Experience[] = [
     company: 'Construex',
     role: 'React Frontend Developer',
     period: 'Nov 2023 — Jan 2026',
+    duration: '2 yrs 2 mos',
     location: 'Quito, Ecuador',
     current: true,
     description: [
@@ -35,6 +37,7 @@ export const experience: Experience[] = [
     company: 'Clever IT Group',
     role: 'React Full Stack Developer',
     period: 'Sep 2022 — Mar 2023',
+    duration: '6 mos',
     location: 'Santiago, Chile',
     client: 'San Sebastian University — Atando Cabos',
     description: [
@@ -58,6 +61,7 @@ export const experience: Experience[] = [
     company: 'SuperDigital by Santander Group',
     role: 'React Frontend Developer',
     period: 'Apr 2021 — Aug 2022',
+    duration: '1 yr 4 mos',
     location: 'Buenos Aires, Argentina',
     client: 'Santander Group',
     description: [
@@ -81,6 +85,7 @@ export const experience: Experience[] = [
     company: 'Avalith',
     role: 'React Frontend Developer',
     period: 'Dec 2020 — Apr 2021',
+    duration: '4 mos',
     location: 'Mar del Plata, Argentina',
     description: [
       'Developed the corporate website for Avalith, a technology consultancy firm, using React, Gatsby.js, and Tailwind CSS, focusing on performance and SEO optimization.',
@@ -93,6 +98,7 @@ export const experience: Experience[] = [
     company: 'Freelancer',
     role: 'Full Stack Developer',
     period: 'Nov 2018 — Dec 2020',
+    duration: '2 yrs 1 mo',
     location: 'Remote',
     client: 'Shaddai Solutions LLC (USA)',
     description: [
@@ -113,6 +119,7 @@ export const experience: Experience[] = [
     company: 'Web Developer — Various Companies',
     role: 'Web Developer',
     period: 'Apr 2009 — Sep 2018',
+    duration: '9 yrs 5 mos',
     location: 'Cuenca, Ecuador',
     description: [
       'Built and maintained 20+ websites and web applications for local clients across tourism, hospitality, and services sectors.',
