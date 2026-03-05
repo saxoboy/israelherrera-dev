@@ -52,7 +52,12 @@ export default function OrbitalPhoto({
           // Placeholder with initials
           <div className='w-full h-full flex items-center justify-center bg-[rgba(190,242,100,0.05)]'>
             <span className='font-mono text-3xl font-bold text-gradient-lime'>
-              IH
+              {name
+                .split(' ')
+                .map((n) => n[0])
+                .join('')
+                .slice(0, 2)
+                .toUpperCase()}
             </span>
           </div>
         )}
@@ -61,7 +66,7 @@ export default function OrbitalPhoto({
       {/* Orbital skill badges */}
       {skills.slice(0, 8).map((skill, i) => (
         <motion.div
-          key={skill}
+          key={`${skill}-${i}`}
           style={positions[i] as React.CSSProperties}
           className='absolute'
           animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.05, 1] }}

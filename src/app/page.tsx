@@ -11,6 +11,16 @@ import { skillCategories } from '@/data/en/skills';
 import { projects } from '@/data/en/projects';
 import { about } from '@/data/en/about';
 
+export const metadata = {
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/',
+      es: '/es',
+    },
+  },
+};
+
 export default function HomePage() {
   return (
     <>
@@ -20,7 +30,6 @@ export default function HomePage() {
         <Projects lang='en' data={projects} />
         <Experience lang='en' data={experience} />
         <Skills
-          lang='en'
           categories={skillCategories}
           subtitle="what I work with and what I'm learning"
         />

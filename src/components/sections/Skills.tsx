@@ -89,7 +89,6 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 interface SkillsProps {
-  lang: 'en' | 'es';
   categories: SkillCategory[];
   title?: string;
   subtitle?: string;
@@ -115,9 +114,7 @@ export default function Skills({
           <h2 className='text-4xl md:text-5xl font-bold text-gradient-lime'>
             {title}
           </h2>
-          {subtitle && (
-            <p className='text-muted mt-3 text-base md:text-sm'>{subtitle}</p>
-          )}
+          {subtitle && <p className='text-muted mt-3 text-sm'>{subtitle}</p>}
         </motion.div>
 
         <div className='flex flex-col gap-10'>

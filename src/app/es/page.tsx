@@ -31,7 +31,6 @@ export default function HomePageEs() {
         <Projects lang='es' data={projects} />
         <Experience lang='es' data={experience} />
         <Skills
-          lang='es'
           categories={skillCategories}
           title='Habilidades'
           subtitle='lo que sé y lo que estoy aprendiendo'

@@ -12,8 +12,12 @@ interface AboutProps {
   };
 }
 
-export default function About({ data }: AboutProps) {
+export default function About({ lang, data }: AboutProps) {
   const { photoSrc } = data;
+  const photoAlt =
+    lang === 'es'
+      ? 'Foto de perfil de Israel Herrera'
+      : 'Profile photo of Israel Herrera';
   return (
     <section id='about' className='py-24 px-6'>
       <div className='mx-auto max-w-6xl w-full'>
@@ -58,7 +62,7 @@ export default function About({ data }: AboutProps) {
               <div className='relative w-72 h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden border border-border glow-lime'>
                 <Image
                   src={photoSrc}
-                  alt='Israel Herrera'
+                  alt={photoAlt}
                   fill
                   className='object-cover object-top'
                   sizes='(max-width: 1024px) 288px, 320px'

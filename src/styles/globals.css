@@ -15,7 +15,7 @@
 
   /* Fonts */
   --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), 'Courier New', monospace;
+  --font-mono: var(--font-space-mono), 'Courier New', monospace;
 }
 
 /* Force CSS vars on :root so browser always picks them up */
@@ -31,7 +31,7 @@
   --color-border: rgba(190, 242, 100, 0.12);
   --color-border-hover: rgba(190, 242, 100, 0.3);
   --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), 'Courier New', monospace;
+  --font-mono: var(--font-space-mono), 'Courier New', monospace;
 }
 
 @layer base {
