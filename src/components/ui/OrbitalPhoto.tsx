@@ -54,6 +54,7 @@ export default function OrbitalPhoto({
             <span className='font-mono text-3xl font-bold text-gradient-lime'>
               {name
                 .split(' ')
+                .filter((n) => n.length > 0)
                 .map((n) => n[0])
                 .join('')
                 .slice(0, 2)
