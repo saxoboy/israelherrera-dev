@@ -8,11 +8,12 @@ interface AboutProps {
   data: {
     title: string;
     paragraphs: string[];
+    photoSrc?: string;
   };
-  photoSrc?: string;
 }
 
-export default function About({ data, photoSrc }: AboutProps) {
+export default function About({ data }: AboutProps) {
+  const { photoSrc } = data;
   return (
     <section id='about' className='py-24 px-6'>
       <div className='mx-auto max-w-6xl w-full'>

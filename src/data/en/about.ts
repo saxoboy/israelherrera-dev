@@ -7,4 +7,5 @@ export const about = {
     "I'm currently looking for remote opportunities where I can contribute from day one, keep growing, and work with teams that take code quality as seriously as I do.",
     "When I'm not coding, you'll find me playing saxophone 🎷 at my local church or drinking coffee ☕ while reading about what's next in tech.",
   ],
+  photoSrc: '/images/israel-3.jpg',
 };

@@ -90,10 +90,10 @@ export const projects: Project[] = [
       '/images/project/heraldoscla-2.png',
     ],
     technologies: [
-      'Next.js 16',
-      'React 19',
+      'Next.js',
+      'React',
       'TypeScript',
-      'Tailwind CSS v4',
+      'Tailwind CSS',
       'Radix UI',
       'Resend',
       'SendGrid',
