@@ -11,16 +11,16 @@ interface NavbarProps {
 
 const navLinks = {
   en: [
-    { label: 'About', href: '#about' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Skills', href: '#skills' },
+    { label: 'About', href: '/#about' },
+    { label: 'Projects', href: '/projects' },
+    { label: 'Experience', href: '/#experience' },
+    { label: 'Skills', href: '/#skills' },
   ],
   es: [
-    { label: 'Sobre mí', href: '#about' },
-    { label: 'Proyectos', href: '#projects' },
-    { label: 'Experiencia', href: '#experience' },
-    { label: 'Habilidades', href: '#skills' },
+    { label: 'Sobre mí', href: '/es#about' },
+    { label: 'Proyectos', href: '/es/projects' },
+    { label: 'Experiencia', href: '/es#experience' },
+    { label: 'Habilidades', href: '/es#skills' },
   ],
 };
 

@@ -7,4 +7,5 @@ export const about = {
     'Busco oportunidades remotas donde pueda aportar desde el primer día, seguir creciendo y colaborar con equipos que valoren la calidad del código tanto como yo.',
     'Cuando no estoy en código, me encuentras tocando el saxofón 🎷 en mi iglesia o tomando un café ☕ mientras leo sobre lo que viene en el mundo tech.',
   ],
+  photoSrc: '/images/israel-3.jpg',
 };

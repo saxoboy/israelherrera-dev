@@ -42,7 +42,7 @@ export default function About({ lang, data }: AboutProps) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className='text-base md:text-sm text-muted leading-relaxed'
+                  className='text-base text-muted leading-relaxed'
                 >
                   {paragraph}
                 </motion.p>
